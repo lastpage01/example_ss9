@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: left;
+        } 
+        table{
+            width: 700px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <input id="project" type="text" placeholder="Enter Project">
+    <input id="task"type="text" placeholder="Enter Task">
+    <input id="time" type="text" placeholder="Time Spent">
+    <button id="add">Add</button>
+    <button id="clear">Clear</button>
+    <br><br>
+    <table id="bang_cong">
+        <thead id="ts_thead">
+            <th>Project</th>
+            <th>Task</th>
+            <th>Time Spent</th>
+            <th>Actions</th>
+        </thead>
+        <tbody id="ts_tbody">
+            <tr id="1">
+                <td id="project_1">learn front-end</td>
+                <td id="task_1">learn HTML</td>
+                <td id="time_1">6</td>
+                <td>
+                    <button onclick="actions_remove(1)">X</button>
+                    <button onclick="actions_update(1)">U</button>
+                </td>
+            </tr>
+            <tr id="2">
+                <td id="project_2">learn front-end</td>
+                <td id="task_2">learn CSS</td>
+                <td id="time_2">8</td>
+                <td>
+                    <button onclick="actions_remove(2)">X</button>
+                    <button onclick="actions_update(2)">U</button>
+                </td>
+            </tr>
+            <tr id="3">
+                <td id="project_3">learn front-end</td>
+                <td id="task_3">learn JS Variables and Data types</td>
+                <td id="time_3">6</td>
+                <td>
+                    <button onclick="actions_remove(3)">X</button>
+                    <button onclick="actions_update(3)">U</button>
+                </td>
+            </tr>
+            <tr id="4">
+                <td id="project_4">learn git</td>
+                <td id="task_4">learn git basics</td>
+                <td id="time_4">2</td>
+                <td>
+                    <button onclick="actions_remove(4)">X</button>
+                    <button onclick="actions_update(4)">U</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="ss_4.js"></script>
+</body>
+
+</html>

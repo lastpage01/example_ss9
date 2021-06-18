@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Courier New;
+        }
+
+        #reload {
+            float: right;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            text-align: right;
+        }
+        #quoteText{
+            font-size: 25px;
+            width: 60%;
+        }
+        #quoteAuthor{
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="reload" class="btn btn-primary">Reload</div>
+    <div id="container">
+        <div id="quoteText"></div>
+        <div id="quoteAuthor"></div>
+    </div>
+
+    <script src="ss_3.js"></script>
+
+</body>
+
+</html>
